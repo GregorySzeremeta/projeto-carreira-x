@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreira X - Descubra Sua Carreira Ideal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </div>
+                <h1 class="logo-text">Carreira X</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2 class="hero-title">Descubra Sua Carreira Ideal</h2>
+            <p class="hero-subtitle">
+                Explore profissões, salários, requisitos e perspectivas de mercado
+                para tomar a melhor decisão sobre seu futuro profissional.
+            </p>
+            
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Pesquisar por profissão, habilidade..."
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-buttons" id="categoryButtons">
+                <button class="category-btn active" data-category="Todas">Todas</button>
+                <button class="category-btn" data-category="Tecnologia">Tecnologia</button>
+                <button class="category-btn" data-category="Saúde">Saúde</button>
+                <button class="category-btn" data-category="Engenharia e Construção">Engenharia e Construção</button>
+                <button class="category-btn" data-category="Educação">Educação</button>
+                <button class="category-btn" data-category="Direito">Direito</button>
+                <button class="category-btn" data-category="Comunicação e Marketing">Comunicação e Marketing</button>
+                <button class="category-btn" data-category="Gastronomia">Gastronomia</button>
+                <button class="category-btn" data-category="Design e Criação">Design e Criação</button>
+                <button class="category-btn" data-category="Finanças">Finanças</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Grid -->
+    <section class="careers-section">
+        <div class="container">
+            <p class="results-count" id="resultsCount">11 profissões encontradas</p>
+            <div class="careers-grid" id="careersGrid">
+                <!-- Cards serão inseridos via JavaScript -->
+            </div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <p class="no-results-title">Nenhuma profissão encontrada</p>
+                <p class="no-results-text">Tente ajustar os filtros ou termos de busca</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
