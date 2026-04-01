@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Carreira - Carreira X</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-with-back">
+                <a href="index.html" class="logo-container" style="text-decoration: none;">
+                    <div class="logo-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                    </div>
+                    <span class="logo-text">Carreira X</span>
+                </a>
+                <a href="index.html" class="back-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    Voltar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Image -->
+    <div class="hero-image" id="heroImage">
+        <img src="" alt="" id="heroImg">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <span class="detail-badge" id="categoryBadge"></span>
+                <h1 class="detail-title" id="careerTitle"></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container" style="padding-top: 3rem; padding-bottom: 3rem;">
+        <!-- Info Cards -->
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-card-icon salary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-card-title">Faixa Salarial</h3>
+                </div>
+                <p class="info-card-value" id="salaryValue"></p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-card-icon market">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="info-card-title">Mercado</h3>
+                </div>
+                <p class="info-card-value" id="marketValue" style="font-size: 1.25rem;"></p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-header">
+                    <div class="info-card-icon education">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="info-card-title">Formação</h3>
+                </div>
+                <p class="info-card-value" style="font-size: 1.125rem;" id="educationValue"></p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="detail-content">
+            <!-- Left Column -->
+            <div class="main-content">
+                <!-- Description -->
+                <div class="content-card">
+                    <h2 class="content-title">Sobre a Profissão</h2>
+                    <p class="content-text" id="descriptionText"></p>
+                </div>
+
+                <!-- Responsibilities -->
+                <div class="content-card">
+                    <h2 class="content-title">Responsabilidades</h2>
+                    <ul class="responsibility-list" id="responsibilitiesList"></ul>
+                </div>
+
+                <!-- Pros and Cons -->
+                <div class="pros-cons-grid">
+                    <div class="content-card">
+                        <h2 class="pros-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #16a34a;">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            Vantagens
+                        </h2>
+                        <ul class="pros-list" id="prosList"></ul>
+                    </div>
+
+                    <div class="content-card">
+                        <h2 class="cons-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #dc2626;">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="15" y1="9" x2="9" y2="15"></line>
+                                <line x1="9" y1="9" x2="15" y2="15"></line>
+                            </svg>
+                            Desafios
+                        </h2>
+                        <ul class="cons-list" id="consList"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Sidebar -->
+            <div class="sidebar">
+                <div class="content-card skills-card">
+                    <div class="skills-title">
+                        <svg class="lightbulb-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="9" y1="18" x2="15" y2="18"></line>
+                            <line x1="10" y1="22" x2="14" y2="22"></line>
+                            <path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"></path>
+                        </svg>
+                        Habilidades
+                    </div>
+                    <div class="skills-container" id="skillsContainer"></div>
+
+                    <div class="education-section">
+                        <h3 class="education-title">Formação Necessária</h3>
+                        <p class="education-text" id="educationDetail"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="detalhes.js"></script>
+</body>
+</html>
